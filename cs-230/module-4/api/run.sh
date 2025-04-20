@@ -1,0 +1,1 @@
+mvn clean install && java -jar target/gameauth-0.0.1-SNAPSHOT.jar server config.yml
