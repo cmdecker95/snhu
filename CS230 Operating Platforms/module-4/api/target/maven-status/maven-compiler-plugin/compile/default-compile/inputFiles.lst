@@ -1,0 +1,11 @@
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/controller/RESTClientController.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/auth/GameUser.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/healthcheck/AppHealthCheck.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/controller/GameUserRESTController.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/auth/GameAuthorizer.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/representations/GameUserInfo.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/dao/GameUserDB.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/auth/GameAuthenticator.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/healthcheck/HealthCheckController.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/GameAuthConfiguration.java
+/Users/christiandecker/dev/cs230/module_four 2/api/src/main/java/com/gamingroom/gameauth/GameAuthApplication.java
