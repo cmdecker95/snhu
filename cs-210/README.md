@@ -1,5 +1,7 @@
 # CS 210: Programming Languages
 
+> **GRADE**: A (99.55%)
+
 ## Course Prerequisites
 
 - IT 145
