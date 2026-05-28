@@ -1,16 +1,14 @@
-# SNHU Assignments and Projects
+# SNHU CS Coursework Repository Map
 
-Assignments and projects from Southern New Hampshire University CS program.
+This repository is organized by course folders. Use this root README as a navigation index.
 
-## Courses
+Each course and assignment folder has its own `README.md` with the assignment brief and high-impact lessons learned derived from code in that scope.
 
-- [CS 210 - Programming Languages](CS210%20Programming%20Languages/)
-- [CS 230 - Operating Platforms](CS230%20Operating%20Platforms/)
-- [CS 250 - Software Development Lifecycle](CS250%20Software%20Development%20Lifecycle/)
+## Course Index
+- [`CS210 Programming Languages`](CS210%20Programming%20Languages/): C++ and Python modules/projects covering debugging, file I/O, OOP, and data processing.
+- [`CS230 Operating Platforms`](CS230%20Operating%20Platforms/): Java design-pattern work plus a full-stack Dropwizard API + React/TypeScript module.
+- [`CS250 Software Development Lifecycle`](CS250%20Software%20Development%20Lifecycle/): Java Swing coursework focused on UI design and software lifecycle practices.
 
-## Lessons Learned
-
-- **[C++, Python, Java, TypeScript]:** Built projects across 4+ languages. Each language trades off performance vs ergonomics vs ecosystem. Picking right tool matters.
-- **[OOP, Design Patterns, REST APIs]:** Applied singleton, iterator, MVC patterns. Design-first approach (UML, pseudocode) catches issues before code.
-- **[File I/O, Data Structures]:** Used maps, file streams, JSON for cross-language data exchange. Plain text formats simplify debugging.
-- **[Version Control]:** Tracked all work in Git. Reproducible builds matter for portfolio projects.
+## Where to Start
+- Open a course folder README first for course-level context.
+- Then open module/project READMEs for assignment-specific implementation details and lessons.
