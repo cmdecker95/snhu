@@ -7,7 +7,7 @@ Each course and assignment folder has its own `README.md` with the assignment br
 ## Course Index
 - [`CS210 Programming Languages`](CS210%20Programming%20Languages/): C++ and Python modules/projects covering debugging, file I/O, OOP, and data processing.
 - [`CS230 Operating Platforms`](CS230%20Operating%20Platforms/): Java design-pattern work plus a full-stack Dropwizard API + React/TypeScript module.
-- [`CS250 Software Development Lifecycle`](CS250%20Software%20Development%20Lifecycle/): Java Swing coursework focused on UI design and software lifecycle practices.
+- [`CS250 Software Development Lifecycle`](CS250%20Software%20Development%20Lifecycle/): Java Swing coursework as a means to exercise agile software lifecycle practices.
 
 ## Where to Start
 - Open a course folder README first for course-level context.
