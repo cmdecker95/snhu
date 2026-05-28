@@ -1,6 +1,6 @@
 # CS250 Software Development Lifecycle
 
-This course emphasizes building maintainable software through lifecycle thinking, modular architecture, and quality-focused implementation practices.
+This course uses a Java Swing travel agency project to exercise agile software development practices.
 
 ## [List View](./list-view)
 Developed a Java Swing desktop app that renders a destination list with images, descriptions, and accessibility metadata.
