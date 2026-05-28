@@ -37,3 +37,11 @@ My approach to designing this software centered on separating concerns between t
 ## Conclusion
 
 This project demonstrated the value of thoughtful software architecture when migrating between platforms. By preserving the core game logic in Java while creating a new web frontend, we delivered a solution that met The Gaming Room's needs for multi-platform support while minimizing development time and risk.
+
+## Lessons Learned
+
+- **[Java, Singleton, Iterator]:** Design patterns solve real problems. Singleton for shared state, iterator for safe collection traversal.
+- **[Dropwizard, REST API]:** Java backend with JAX-RS annotations. Config-driven (YAML), health checks built in.
+- **[React, TypeScript, Vite]:** Modern frontend toolchain. TypeScript catches contract mismatches. Vite gives fast iteration.
+- **[Docker, Maven]:** Containerized stack with Docker Compose + Maven builds. Reproducible environment across machines.
+- **[Design Documents First]:** UML, requirements analysis, platform evaluation before code. Caught architecture issues before implementation.

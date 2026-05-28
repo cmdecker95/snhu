@@ -1,11 +1,10 @@
-# GameAuth
+# CS 230 Module Four - GameAuth API
 
-## How to start the GameAuth application
+Dropwizard Java backend for game user authentication. Maven-managed project with health checks, REST controllers, DAO layer.
 
-1. Run `mvn clean install` to build your application
-1. Start application with `java -jar target/gameauth-0.0.1-SNAPSHOT.jar server config.yml`
-1. To check that your application is running enter url `http://localhost:8080`
+## Lessons Learned
 
-## Health Check
-
-To see your applications health enter url `http://localhost:8081/healthcheck`
+- **[Java, Maven]:** `pom.xml` manages dependencies (Dropwizard, Jersey, Jackson). Avoids JAR hell.
+- **[Java, Dropwizard]:** App class registers resources + health checks. `config.yml` externalizes config.
+- **[Java, Health Checks]:** `/healthcheck` endpoint separate from API. Ops monitoring built in from day one.
+- **[Java, DAO Pattern]:** In-memory `GameUserDB` simulates database. Abstracting data access behind interface makes DB swap easy.
