@@ -1,34 +1,11 @@
-# CS 210 Portfolio Submission
+# CS210 Programming Languages Portfolio
 
-This repository contains the project files for my CS 210 course project, along with a reflection on the project.
+## Assignment Brief
+This folder contains CS210 module and project work written in C++ with one Python comparison exercise. The code covers debugging a broken calculator, file transformation from Fahrenheit to Celsius, a dual-clock console app, an interest calculator, and a grocery frequency analyzer. Scope here is course-level; implementation details live in module and project subfolders.
 
-## Project Summary
-
-This project was designed to simulate a cash register and inventory system for a small grocery store. The program takes an input file of grocery items and their prices, allows the user to select items to purchase, calculates the total cost, and updates the inventory.
-
-## What I Did Well
-
-I successfully implemented the core functionality of the cash register system, including reading the inventory from a file, displaying the menu of items, allowing the user to select items, calculating the total cost, and updating the inventory. I also implemented error handling to prevent the program from crashing when the user enters invalid input.
-
-## Areas for Enhancement
-
-One area for enhancement is to improve the user interface. The current interface is text-based and could be made more user-friendly with a graphical user interface (GUI). Another area for enhancement is to add more features to the cash register system, such as the ability to apply discounts, calculate sales tax, and print receipts.
-
-## Challenges and Solutions
-
-The most challenging part of the project was implementing the inventory management system. I had to ensure that the inventory was updated correctly when items were purchased and that the program could handle cases where the inventory was empty. I overcame this challenge by using a map data structure to store the inventory and by implementing error handling to prevent the program from crashing when the inventory is empty.
-
-## Transferable Skills
-
-The skills that I learned in this project, such as file I/O, data structures, and error handling, will be particularly transferable to other projects or course work. I also learned how to design and implement a software system from scratch, which is a valuable skill for any software developer.
-
-## Maintainability, Readability, and Adaptability
-
-I made the program maintainable, readable, and adaptable by using clear and concise code, adding comments to explain the code, and using modular design principles. I also used a consistent coding style throughout the project.
-
-## Lessons Learned
-
-- **[C++, File I/O, Maps]:** File-based inventory with `std::map` for O(log n) lookups. Map prevented duplicate items, simplified stock updates.
-- **[C++, OOP, Modular Design]:** Separated concerns across functions. `main()` stayed thin. Easier to test each piece in isolation.
-- **[C++, Error Handling]:** Input validation prevents crashes on malformed data. Defensive coding is non-negotiable for production.
-- **[C++, GUI Limitations]:** CLI works for prototypes but real users need visual interfaces. Swing/Qt would be next step.
+## Lessons Learned (High Impact)
+- **[C++, Input Validation, Defensive Programming]:** Multiple assignments use loops around `cin` failure handling and constrained numeric input before processing. Early validation prevents invalid state from propagating through calculations.
+- **[C++, Header/Source Separation]:** Projects split interfaces (`.h`) from implementations (`.cpp`) for reusable types like `Calculator`, `ItemFreqMap`, and time utilities. This improves maintainability and compile-time clarity.
+- **[C++, File I/O, Data Pipelines]:** Exercises read structured text, transform data, and persist output files (`CelsiusTemperature.txt`, `frequency.dat`). Explicit I/O stages make results reproducible and testable.
+- **[C++, OOP, Single Responsibility]:** Project code moves domain logic into focused classes while `main` handles user interaction and control flow. This supports clearer extension paths and easier reasoning.
+- **[C++, Python, Language Tradeoffs]:** The module-1 pair of hello-world programs shows equivalent behavior with very different runtime/setup ceremony. Language choice directly affects implementation overhead.

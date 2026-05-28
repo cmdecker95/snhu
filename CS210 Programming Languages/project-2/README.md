@@ -1,10 +1,9 @@
-# CS 210 Project Two - Airgead Banking (Compound Interest)
+# CS210 Project 2 - Airgead Banking Calculator
 
-Investment growth calculator. OOP C++ with pseudocode-first design. Showed monthly compounding with/without monthly deposits.
+## Assignment Brief
+This project builds a C++ compound-interest calculator that prints yearly reports with and without monthly deposits. `main.cpp` handles repeat-run control, and the `Calculator` class handles validated user input plus monthly compounding calculations.
 
-## Lessons Learned
-
-- **[C++, OOP]:** Separate `Calculator` class with header. Business logic decoupled from UI.
-- **[C++, Pseudocode First]:** Writing steps in English before code catches edge cases early.
-- **[C++, Financial Math]:** Compound interest: `P(1 + r/n)^(nt)`. Accuracy requires `double` + careful rounding.
-- **[C++, Industry Standards]:** Client coding standards doc must be followed. External specs are normal on the job.
+## Lessons Learned (High Impact)
+- **[C++, Class Design, Separation of Concerns]:** Report generation and validation are encapsulated in `Calculator` while `main` remains orchestration-only. This keeps financial logic isolated from control flow.
+- **[C++, Input Validation, numeric_limits]:** `getValidInt` and `getValidDouble` loop until positive numeric input and clear stream failures between attempts. Robust input gating prevents invalid financial calculations.
+- **[C++, Financial Computation, Precision]:** Yearly reports derive from monthly rate application and accumulated yearly interest with `double` plus fixed formatting. Predictable precision improves trust in money-related output.

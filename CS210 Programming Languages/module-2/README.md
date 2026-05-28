@@ -1,9 +1,9 @@
-# CS 210 Module Two - Calculator Debugging
+# CS210 Module 2 - Calculator Debugging
 
-Debugged a broken arithmetic calculator. Required systematic root-cause analysis of syntax, logic, and runtime errors.
+## Assignment Brief
+This module contains a broken starter calculator (`Calculator.cpp`) and a corrected version (`Calculator-fixed.cpp`) with preserved inline "OLD/NEW/ADD" change notes. The fixed implementation repairs syntax issues, arithmetic branch behavior, and input-loop handling for repeated calculations.
 
-## Lessons Learned
-
-- **[C++, Debugging]:** 3 error types: syntax (compiler catches), logic (wrong output), runtime (crash). Fix methodically, one at a time.
-- **[C++, Control Flow]:** Loop-until-quit pattern with `char` input, switch on operator. Input validation prevents undefined behavior.
-- **[C++, Comments]:** Inline comments explain *why* not *what*. Saves future-you from re-debugging.
+## Lessons Learned (High Impact)
+- **[C++, Debugging Workflow]:** Keeping original faulty lines as comments beside fixes creates an auditable change trail from bug to correction. This improves traceability during review and grading.
+- **[C++, Control Flow, Conditionals]:** Removing stray semicolons after `if` conditions and adding braces restores branch correctness for arithmetic operations. Small syntax mistakes can silently break business logic.
+- **[C++, Input Validation, Error Handling]:** The fixed version validates replay prompts and handles division-by-zero before calculating. Guard clauses prevent runtime failures and undefined output.

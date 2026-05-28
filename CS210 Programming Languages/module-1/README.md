@@ -1,10 +1,9 @@
-# CS210 Module 1 — Hello World in C++ and Python
+# CS210 Module 1 - Hello World Comparison
 
-Two implementations of the classic Hello World program written the same day (2025-01-06) in C++ and Python, demonstrating the syntax and ceremony differences between a compiled systems language and an interpreted scripting language.
+## Assignment Brief
+This module implements the same "Hello, World!" output in both C++ (`main.cpp`) and Python (`main.py`). The scope is a minimal syntax comparison between a compiled language and an interpreted scripting language, with no external libraries or build tooling.
 
-## Lessons Learned
-
-- **[C++, iostream, main function]:** C++ requires `#include <iostream>` for console I/O and an explicit `int main()` entry point returning `0` to the OS. Even trivial output demands boilerplate the language enforces.
-- **[C++, cout, endl]:** `cout` with `<<` insertion and `endl` (newline + flush) is the standard C++ output pattern. The `using namespace std;` directive avoids repeated `std::` prefix but pulls the entire std namespace into scope — a tradeoff between brevity and namespace pollution.
-- **[Python, print function]:** Python's built-in `print()` needs no import, no entry-point function, no type annotations, and no explicit return. The language runtime handles all ceremony implicitly.
-- **[C++ vs Python, language comparison]:** Same algorithm (~10 tokens of logic) requires 3× the lines in C++ (15 vs 8) due to include directives, namespace declarations, function signatures, and return statements. This illustrates the C++ philosophy of explicit control versus Python's "convention over configuration" design.
+## Lessons Learned (High Impact)
+- **[C++, iostream, Program Entry]:** The C++ version requires includes, namespace handling, and an explicit `main` return path to print one line. Language ceremony is higher but execution boundaries are explicit.
+- **[Python, print]:** The Python version performs the same task with a single top-level `print()` call. Lower ceremony reduces friction for simple scripting tasks.
+- **[Cross-language Comparison, Runtime Model]:** Both files produce identical output while using different language structures and startup assumptions. Matching behavior across implementations clarifies where complexity comes from syntax versus logic.

@@ -1,9 +1,9 @@
-# CS 210 Module Five - File I/O: Fahrenheit to Celsius
+# CS210 Module 5 - Fahrenheit to Celsius File Conversion
 
-Read city temperatures from `FahrenheitTemperature.txt`, converted F to C, wrote to `CelsiusTemperature.txt`. Pure file I/O exercise.
+## Assignment Brief
+This module reads city-temperature pairs from `FahrenheitTemperature.txt`, converts each Fahrenheit value to Celsius, and writes results to `CelsiusTemperature.txt`. The C++ program uses vectors to store parsed input before transformation and output.
 
-## Lessons Learned
-
-- **[C++, fstream]:** `ifstream` for read, `ofstream` for write. Separate I/O objects prevent accidental overwrite.
-- **[C++, Data Parsing]:** Spaces delimit city name from int temperature. Parsing structured text is foundational.
-- **[C++, Integer Math]:** `(°F - 32) * 5 / 9`. Order of ops matters - integer division truncates without float cast.
+## Lessons Learned (High Impact)
+- **[C++, fstream, Error Handling]:** The program checks `is_open()` for both input and output streams before processing. Fast-fail file checks avoid silent data loss.
+- **[C++, vector, Batch Processing]:** Reading into parallel vectors and transforming in a separate loop decouples parsing from conversion. This structure makes each stage easier to inspect and test.
+- **[C++, Integer Arithmetic]:** Celsius conversion uses integer math (`(F - 32) * 5 / 9`) with truncation behavior. Numeric type choices directly affect output precision.

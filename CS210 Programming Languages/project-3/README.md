@@ -1,10 +1,9 @@
-# CS 210 Project Three - Corner Grocer Item Tracker
+# CS210 Project 3 - Corner Grocer Frequency Tracker
 
-Frequency analyzer for grocery purchase data. Reads receipt items, counts occurrences, shows histogram. C++ with map-based storage.
+## Assignment Brief
+This project reads grocery item names from an input file, counts item frequency, and provides menu-driven lookup, full listing, and histogram output. The `ItemFreqMap` class owns file ingestion, map-backed counting, and backup export to `frequency.dat`, while `main.cpp` handles user interaction.
 
-## Lessons Learned
-
-- **[C++, std::map]:** Map gives O(log n) frequency lookups. Chose over vector for readability and performance.
-- **[C++, File I/O]:** Read input, write `frequency.dat` backup. Dual file ops reinforce robust data handling.
-- **[C++, Histogram]:** Asterisk visual frequency display. Simple format, high impact for stakeholders.
-- **[C++, Class Design]:** `ItemFreqMap` class with public interface, private map. Clean separation for testability.
+## Lessons Learned (High Impact)
+- **[C++, std::map, Frequency Analysis]:** Item counts are accumulated with `++itemFreqMap[line]` over each input line. Associative containers make incremental counting concise and reliable.
+- **[C++, Exceptions, File I/O]:** Constructor-level checks throw `runtime_error` when source or backup files cannot be opened. Explicit failure signaling avoids partial or misleading reports.
+- **[C++, CLI Design, Data Presentation]:** Separate methods for point lookup, full dump, and histogram provide multiple views over the same dataset. Multiple output modes improve usability without duplicating storage logic.
