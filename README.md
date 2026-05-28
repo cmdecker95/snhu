@@ -6,6 +6,7 @@ Assignments and projects from Southern New Hampshire University CS program.
 
 - [CS 210 - Programming Languages](CS210%20Programming%20Languages/)
 - [CS 230 - Operating Platforms](CS230%20Operating%20Platforms/)
+- [CS 250 - Software Development Lifecycle](CS250%20Software%20Development%20Lifecycle/)
 
 ## Lessons Learned
 
