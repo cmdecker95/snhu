@@ -1,1 +1,10 @@
+# misc
 .DS_Store
+
+# outputs
+bin
+target
+*.jar
+
+# ide
+.vscode
