@@ -10,7 +10,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import java.awt.Color;
 
 public class SlideShow extends JFrame {
 
@@ -41,7 +40,8 @@ public class SlideShow extends JFrame {
         cardText = new CardLayout();
         slidePane = new JPanel();
         textPane = new JPanel();
-        textPane.setBackground(Color.BLUE);
+        // CD: Removed blue background color to enhance readability of text descriptions.
+        // textPane.setBackground(Color.BLUE);
         textPane.setBounds(5, 470, 790, 50);
         textPane.setVisible(true);
         buttonPane = new JPanel();
@@ -54,7 +54,8 @@ public class SlideShow extends JFrame {
         setSize(800, 600);
         setLocationRelativeTo(null);
         setTitle("Top 5 Destinations SlideShow");
-        getContentPane().setLayout(new BorderLayout(10, 50));
+        // CD: Added vertical gap of 100 pixels to create more space between the slide and text description for improved readability.
+        getContentPane().setLayout(new BorderLayout(10, 100));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Setting the layouts for the panels
@@ -120,16 +121,21 @@ public class SlideShow extends JFrame {
      */
     private String getResizeIcon(int i) {
         String image = "";
-        if (i == 1) {
-            image = "<html><body><img width= '800' height='500' src='" + getClass().getResource("/resources/TestImage1.jpg") + "'</body></html>";
-        } else if (i == 2) {
-            image = "<html><body><img width= '800' height='500' src='" + getClass().getResource("/resources/TestImage2.jpg") + "'</body></html>";
-        } else if (i == 3) {
-            image = "<html><body><img width= '800' height='500' src='" + getClass().getResource("/resources/TestImage3.jpg") + "'</body></html>";
-        } else if (i == 4) {
-            image = "<html><body><img width= '800' height='500' src='" + getClass().getResource("/resources/TestImage4.jpg") + "'</body></html>";
-        } else if (i == 5) {
-            image = "<html><body><img width= '800' height='500' src='" + getClass().getResource("/resources/TestImage5.jpg") + "'</body></html>";
+
+        // CD: Updated images and alt text to match the new wellness theme of the slideshow.
+        // Each image is resized to fit within the 800x500 pixel area of the slide pane while maintaining aspect ratio.
+        // The alt text provides descriptive information about the content of each image.
+        switch (i) {
+            case 1 ->
+                image = "<html><body><img width='800' height='500' alt='Bahamas tropical beach with crystal clear turquoise waters for wellness retreat' src='" + getClass().getResource("/resources/bahamas.jpeg") + "'></body></html>";
+            case 2 ->
+                image = "<html><body><img width='800' height='500' alt='Hawaii hiking peak overlooking the ocean for wellness and rejuvenation' src='" + getClass().getResource("/resources/hawaii.jpeg") + "'></body></html>";
+            case 3 ->
+                image = "<html><body><img width='800' height='500' alt='Japan mountain hot spring promoting relaxation and wellness' src='" + getClass().getResource("/resources/japan.jpeg") + "'></body></html>";
+            case 4 ->
+                image = "<html><body><img width='800' height='500' alt='Vietnam water kayaking adventure next to mountains supporting physical wellness and stress relief' src='" + getClass().getResource("/resources/kayak.jpeg") + "'></body></html>";
+            case 5 ->
+                image = "<html><body><img width='800' height='500' alt='Redwood forest ecosystem for nature-based mental health recovery' src='" + getClass().getResource("/resources/redwood.jpeg") + "'></body></html>";
         }
         return image;
     }
@@ -139,16 +145,19 @@ public class SlideShow extends JFrame {
      */
     private String getTextDescription(int i) {
         String text = "";
-        if (i == 1) {
-            text = "<html><body><font size='5'>#1 The Grand Canyon.</font> <br>Spectacular canyon views and hiking.</body></html>";
-        } else if (i == 2) {
-            text = "<html><body>#2 Top Destination</body></html>";
-        } else if (i == 3) {
-            text = "<html><body>#3 Top Destination</body></html>";
-        } else if (i == 4) {
-            text = "<html><body>#4 Top Destination</body></html>";
-        } else if (i == 5) {
-            text = "<html><body>#5 Top Destination</body></html>";
+
+        // CD: Updated text descriptions to align with the new wellness theme of the slideshow.
+        switch (i) {
+            case 1 ->
+                text = "<html><body><font size='5'>#1 Bahamas Beach Detox</font> <br><b>Mental Health Benefits:</b> Ocean air reduces anxiety and promotes emotional balance. <br><b>Physical Benefits:</b> Salt water therapy improves skin health and circulation.</body></html>";
+            case 2 ->
+                text = "<html><body><font size='5'>#2 Hawaii Wellness Retreat</font> <br><b>Mental Health Benefits:</b> Volcanic mineral springs enhance cognitive function and mood stability. <br><b>Physical Benefits:</b> Geothermal heat therapy aids muscle recovery and detoxification.</body></html>";
+            case 3 ->
+                text = "<html><body><font size='5'>#3 Japan Zen Sanctuary</font> <br><b>Mental Health Benefits:</b> Mindfulness gardens reduce cortisol levels and promote inner peace. <br><b>Physical Benefits:</b> Forest bathing strengthens immune system and reduces inflammation.</body></html>";
+            case 4 ->
+                text = "<html><body><font size='5'>#4 Mountain Adventure Wellness</font> <br><b>Mental Health Benefits:</b> Outdoor activities combat depression and enhance self-esteem. <br><b>Physical Benefits:</b> Kayaking builds cardiovascular endurance and improves overall fitness.</body></html>";
+            case 5 ->
+                text = "<html><body><font size='5'>#5 Redwood Forest Retreat</font> <br><b>Mental Health Benefits:</b> Nature immersion reduces stress and promotes neurological healing. <br><b>Physical Benefits:</b> Forest air improves respiratory function and oxygen absorption.</body></html>";
         }
         return text;
     }
