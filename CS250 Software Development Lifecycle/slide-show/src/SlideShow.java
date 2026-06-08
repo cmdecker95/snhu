@@ -53,7 +53,8 @@ public class SlideShow extends JFrame {
         //Setup frame attributes
         setSize(800, 600);
         setLocationRelativeTo(null);
-        setTitle("Top 5 Destinations SlideShow");
+        // CD: Updated title to match content of detox/wellness vacations
+        setTitle("Top 5 Wellness Destinations");
         // CD: Added vertical gap of 100 pixels to create more space between the slide and text description for improved readability.
         getContentPane().setLayout(new BorderLayout(10, 100));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
